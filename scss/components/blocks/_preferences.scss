@@ -1,0 +1,97 @@
+.preferences {
+  padding: 80px 0px 85px 0px;
+  background: url("../img/pages/home/preferences/preferences__img.png");
+  @media (max-width:500px){
+    padding: 75px 0px 75px 0px;
+  }
+  .preferences__title {
+    color: $colorWhite;
+    text-transform: uppercase;
+    margin: 0px 0px 8px 0px;
+    @media (max-width: 500px) {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  .preferences__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .preferences__item {
+      margin: 20px 0px 0px 0px;
+      max-width: 488px;
+      color: $colorWhite;
+      border: 3px solid #ffffff;
+      padding: 32px 37px 27px 27px;
+      display: block;
+      width: 47%;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background: #1f1f1f;
+        border: 3px solid $colorRed;
+        .preferences__arrow-block {
+          .preferences__arrow {
+            fill: $colorRed;
+          }
+        }
+      }
+      @media (max-width: 900px) {
+        width: 49%;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+        max-width: none;
+      }
+      @media (max-width: 500px) {
+        margin: 40px 0px 0px 0px;
+        padding: 30px 0px 0px 0px;
+        border: none;
+        border-top: 3px solid #ffffff;
+        &:hover {
+          background: none;
+          border: none;
+          border-top: 3px solid #ffffff;
+        }
+        .preferences__item-title {
+          margin: 30px 0px 20px 0px;
+        }
+        .preferences__arrow-block {
+          .preferences__arrow {
+            display: none;
+          }
+        }
+      }
+      .preferences__link {
+        color: $colorWhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .preferences__item-img {
+        width: 32px;
+        height: 30px;
+      }
+      .preferences__item-title {
+        text-transform: uppercase;
+        margin: 20px 0px 20px 0px;
+      }
+      .preferences__item-text {
+        letter-spacing: -0.02em;
+      }
+      .preferences__arrow-block {
+        margin: 22px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        .preferences__arrow {
+          fill: $colorWhite;
+        }
+      }
+    }
+  }
+}

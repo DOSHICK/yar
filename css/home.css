@@ -1,0 +1,606 @@
+/*reset styles.scss*/
+html,
+body,
+header,
+main,
+footer,
+section,
+div,
+nav,
+ul,
+ol,
+li,
+a,
+p,
+span,
+b,
+i,
+em,
+input,
+label,
+button,
+textarea,
+blockquote,
+br,
+canvas,
+code,
+dt,
+dd,
+del,
+ins,
+form,
+iframe,
+img,
+pre,
+sub,
+sup,
+table,
+td,
+th,
+tfoot,
+tr,
+video,
+audio,
+aside,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+}
+
+@font-face {
+  font-family: "San Francisco Pro Display";
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Thin.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Thin.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro Display";
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-ThinItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-ThinItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "San Francisco Pro Display";
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Ultralight.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Ultralight.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Ultralight.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-UltralightItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-UltralightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-UltralightItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-UltralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Light.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Light.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-LightItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-LightItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Regular.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-RegularItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-RegularItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Medium.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-MediumItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-MediumItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Semibold.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-SemiboldItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-SemiboldItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Bold';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Bold.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-BoldItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-BoldItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Black.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Black.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-BlackItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-BlackItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-BlackItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-Heavy.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display';
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-HeavyItalic.eot");
+  src: url("../fonts/SF-Pro-Display/SFProDisplay-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-Pro-Display/SFProDisplay-HeavyItalic.woff") format("woff"), url("../fonts/SF-Pro-Display/SFProDisplay-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  font-family: "San Francisco Pro Display";
+}
+
+button {
+  font-family: "San Francisco Pro Display";
+}
+
+a {
+  font-family: "San Francisco Pro Display";
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.container__wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 35px 0px 35px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 120%;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid #CCCCCC;
+  padding: 11px 30px 11px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  border: 2px solid #000000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+@media (max-width: 400px) {
+  h2 {
+    letter-spacing: -0.05em;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 138.38%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  padding: 30px 0px 40px 0px;
+  background: #303030;
+}
+
+.header .header__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__wrapper .header__logo {
+  padding: 10px 0px 0px 0px;
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header .header__wrapper .header__logo:hover {
+  color: #FB5353;
+}
+
+.header .header__wrapper .header__logo .header__under-logo {
+  margin: 7px 0px 0px 0px;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 120%;
+  text-align: right;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header .header__wrapper .header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header .header__wrapper .header__block .nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .header__wrapper .header__block .nav .nav__list .nav__item {
+  display: block;
+  margin: 0px 30px 0px 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link:hover {
+  color: #FB5353;
+}
+
+.header .header__wrapper .header__block .header__btn {
+  margin: 0px 0px 0px 20px;
+}
+
+.header .header__wrapper .header__block .user-block {
+  margin: 0px 0px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .header__wrapper .header__block .user-block .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header .header__wrapper .header__block .user-block .user .user__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0px 17px 0px 0px;
+}
+
+.header .header__wrapper .header__block .user-block .user .user__name {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.header .header__wrapper .header__block .user-block .header__btn {
+  margin: 0px 0px 0px 35px;
+}
+
+.changes {
+  display: none !important;
+}
+
+.changes.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.preferences {
+  padding: 80px 0px 85px 0px;
+  background: url("../img/pages/home/preferences/preferences__img.png");
+}
+
+@media (max-width: 500px) {
+  .preferences {
+    padding: 75px 0px 75px 0px;
+  }
+}
+
+.preferences .preferences__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0px 0px 8px 0px;
+}
+
+@media (max-width: 500px) {
+  .preferences .preferences__title {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.preferences .preferences__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.preferences .preferences__list .preferences__item {
+  margin: 20px 0px 0px 0px;
+  max-width: 488px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  padding: 32px 37px 27px 27px;
+  display: block;
+  width: 47%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.preferences .preferences__list .preferences__item:hover {
+  background: #1f1f1f;
+  border: 3px solid #FB5353;
+}
+
+.preferences .preferences__list .preferences__item:hover .preferences__arrow-block .preferences__arrow {
+  fill: #FB5353;
+}
+
+@media (max-width: 900px) {
+  .preferences .preferences__list .preferences__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 700px) {
+  .preferences .preferences__list .preferences__item {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .preferences .preferences__list .preferences__item {
+    margin: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    border: none;
+    border-top: 3px solid #ffffff;
+  }
+  .preferences .preferences__list .preferences__item:hover {
+    background: none;
+    border: none;
+    border-top: 3px solid #ffffff;
+  }
+  .preferences .preferences__list .preferences__item .preferences__item-title {
+    margin: 30px 0px 20px 0px;
+  }
+  .preferences .preferences__list .preferences__item .preferences__arrow-block .preferences__arrow {
+    display: none;
+  }
+}
+
+.preferences .preferences__list .preferences__item .preferences__link {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.preferences .preferences__list .preferences__item .preferences__item-img {
+  width: 32px;
+  height: 30px;
+}
+
+.preferences .preferences__list .preferences__item .preferences__item-title {
+  text-transform: uppercase;
+  margin: 20px 0px 20px 0px;
+}
+
+.preferences .preferences__list .preferences__item .preferences__item-text {
+  letter-spacing: -0.02em;
+}
+
+.preferences .preferences__list .preferences__item .preferences__arrow-block {
+  margin: 22px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.preferences .preferences__list .preferences__item .preferences__arrow-block .preferences__arrow {
+  fill: #ffffff;
+}
+/*# sourceMappingURL=home.css.map */

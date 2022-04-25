@@ -1,0 +1,106 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: $colorWhite;
+  padding: 30px 0px 40px 0px;
+  background: #303030;
+  .header__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .header__logo {
+      padding: 10px 0px 0px 0px;
+      color: $colorBlack;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: $colorRed;
+      }
+
+      .header__under-logo {
+        margin: 7px 0px 0px 0px;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 120%;
+        text-align: right;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $colorBlack;
+      }
+    }
+    .header__block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: fit-content;
+      .nav {
+        .nav__list {
+          display: flex;
+          flex-direction: row;
+          .nav__item {
+            display: block;
+            margin: 0px 30px 0px 0px;
+            align-self: center;
+            .nav__link {
+              color: $colorBlack;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 13px;
+              line-height: 16px;
+              cursor: pointer;
+              transition: all 0.3s ease 0s;
+              &:hover {
+                color: $colorRed;
+              }
+            }
+          }
+        }
+      }
+      .header__btn {
+        margin: 0px 0px 0px 20px;
+      }
+      .user-block {
+        margin: 0px 0px 0px 20px;
+        display: flex;
+        flex-direction: row;
+        .user {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          
+          .user__img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            margin: 0px 17px 0px 0px;
+          }
+          .user__name {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 120%;
+            text-transform: uppercase;
+          }
+        }
+        .header__btn {
+          margin: 0px 0px 0px 35px;
+        }
+      }
+    }
+  }
+}
+
+
+// Блок для демонстрации
+.changes{
+  display: none !important;
+  &.active{
+    display: flex !important; 
+  }
+}
