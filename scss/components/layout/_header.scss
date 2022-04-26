@@ -1,9 +1,9 @@
 .header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   background: $colorWhite;
   padding: 30px 0px 40px 0px;
-  background: #303030;
   .header__wrapper {
     width: 100%;
     display: flex;
@@ -46,6 +46,47 @@
             display: block;
             margin: 0px 30px 0px 0px;
             align-self: center;
+            &.listed {
+              position: relative;
+              .nav__link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                svg {
+                  margin: 0px 0px 0px 14px;
+                  fill: #000;
+                }
+              }
+              .nav__item__list {
+                visibility: hidden;
+                position: absolute;
+                
+              }
+              &:hover {
+                .nav__item__list {
+                  top: 30px;
+                  z-index: 10;
+                  visibility: visible;
+                  text-align: center;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  background: $colorWhite;
+                  padding: 10px 10px 10px 10px;
+                  width: 158px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  border-radius: 14px;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+                  .nav__link {
+                    margin: 15px 0px 15px 0px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 120%;
+                  }
+                }
+              }
+            }
             .nav__link {
               color: $colorBlack;
               text-transform: uppercase;
@@ -69,12 +110,13 @@
         display: flex;
         flex-direction: row;
         .user {
+          position: relative;
           display: flex;
           flex-direction: row;
           align-items: center;
           cursor: pointer;
           transition: all 0.3s ease 0s;
-          
+
           .user__img {
             width: 30px;
             height: 30px;
@@ -87,6 +129,47 @@
             line-height: 120%;
             text-transform: uppercase;
           }
+          svg.user__marker {
+            fill: $colorBlack;
+            margin: 0px 0px 0px 14px;
+          }
+
+          .user__list {
+            padding: 10px 10px 10px 10px;
+            width: 158px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            border-radius: 14px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+          }
+          &:hover {
+            .user__name {
+              color: $colorRed;
+            }
+            svg.user__marker {
+              fill: $colorRed;
+            }
+            .user__list {
+              visibility: visible;
+              top: 40px;
+              width: 158px;
+              padding: 10px 10px 10px 10px;
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+              .user__link {
+                text-transform: uppercase;
+                margin: 15px 0px 15px 0px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 120%;
+                color: $colorBlack;
+              }
+            }
+          }
         }
         .header__btn {
           margin: 0px 0px 0px 35px;
@@ -96,11 +179,10 @@
   }
 }
 
-
 // Блок для демонстрации
-.changes{
+.changes {
   display: none !important;
-  &.active{
-    display: flex !important; 
+  &.active {
+    display: flex !important;
   }
 }

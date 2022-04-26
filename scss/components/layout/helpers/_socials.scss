@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  .socials__item {
+    margin: 0px 40px 0px 0px;
+    &:last-child{
+      margin: 0;
+    }
+    .socials__link {
+      svg {
+        fill: $colorBlack;
+        transition: all 0.3s ease 0s;
+      }
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        svg {
+          fill: $colorRed;
+        }
+      }
+      &_png {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $colorBlack;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover {
+          background: $colorRed;
+        }
+      }
+    }
+  }
+}

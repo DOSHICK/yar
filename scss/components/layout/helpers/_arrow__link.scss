@@ -1,0 +1,16 @@
+.arrow-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0px 0px 0px;
+  svg {
+    z-index: 2;
+    fill: $colorBlack;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      fill: $colorRed;
+    }
+  }
+}
