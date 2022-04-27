@@ -1,4 +1,5 @@
 .envelope {
+  z-index: 10;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -6,10 +7,15 @@
   height: 58px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  &:hover{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &:hover {
     .envelope__wrapper {
       width: 100%;
       height: 100%;
+      background: #ed4b4b;
     }
   }
   .envelope__wrapper {
@@ -24,5 +30,10 @@
     transition: all 0.3s ease 0s;
     img {
     }
+  }
+
+  @media (max-width: 500px) {
+    bottom: 20px;
+    right: 14px;
   }
 }
