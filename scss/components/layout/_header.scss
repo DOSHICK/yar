@@ -50,11 +50,8 @@
             &.listed {
               position: relative;
               .nav__link {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
                 svg {
-                  margin: 0px 0px 0px 14px;
+                  margin: 0px 0px 2px 14px;
                   fill: #000;
                 }
               }
@@ -97,6 +94,9 @@
               transition: all 0.3s ease 0s;
               &:hover {
                 color: $colorRed;
+                svg{
+                  fill: $colorRed;
+                }
               }
             }
           }
