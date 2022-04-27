@@ -35,8 +35,8 @@ const swiper1 = new Swiper('.swiper.offer__alpha-wrapper', {
 
 })
 
-let offerBtn = document.querySelector('.offer__btn');
-offerBtn.onclick = function () {
+let submitBtn = document.querySelector('.form__block>.btn__submit');
+submitBtn.onclick = function () {
   changePopupVisibility()
 }
 let popupBtn = document.querySelector(".popup-form-submit__btn");
