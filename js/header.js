@@ -12,40 +12,31 @@ for (let index = 0; index < changers.length; index++) {
 }
 
 
+let burgerBtn = document.getElementById("burger-btn");
+burgerBtn.onclick = function () {
+  changeBurgerImg();
+  changeBurgerVisibility();
+  changeBodyScrolling();
+}
 
-const swiper = new Swiper('.swiper.students', {
-  // Default parameters
-  slidesPerView: 3,
-  spaceBetween: 64,
-  navigation: {
-    nextEl: ".students__navigation>.swiper-button-next",
-    prevEl: ".students__navigation>.swiper-button-prev",
-  },
-  /* работает, как media(min-width: ширина) */
-  breakpoints: {
+function changeBurgerImg() {
+  burgerBtn.classList.toggle("header__burger_active");
+}
 
-    1040: {
-      slidesPerView: 3,
-      spaceBetween: 40
-    },
-    720: {
-      slidesPerView: 2,
-      spaceBetween: 100
-    },
-    0: {
-      slidesPerView: 1,
-    }
+function changeBurgerVisibility() {
+  // Добавление класса кнопке бургера
+  let burger = document.getElementById("header__block");
+  burger.classList.toggle("burger-visible");
+  // Добавление класса header'у (для залития фоном)
+  let header = document.querySelector("header.header");
+  header.classList.toggle("burger-visible");
+}
 
-  }
-})
+function changeBodyScrolling() {
+  let body = document.querySelector("body")
+  body.classList.toggle("none-scroll")
+}
 
-const swiper1 = new Swiper('.swiper.offer__alpha-wrapper', {
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 64,
-  navigation: {
-    nextEl: ".offer__navigation>.swiper-button-next",
-    prevEl: ".offer__navigation>.swiper-button-prev",
-  },
 
-})
+
+

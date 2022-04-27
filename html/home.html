@@ -26,7 +26,7 @@
             Ярослава Призанта
           </p>
         </a>
-        <div class="header__block">
+        <div class="header__block" id="header__block">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
@@ -61,7 +61,8 @@
             <div class="user">
               <img src="../img/stable/userImg/user.png" alt="" class="user__img">
               <span class="user__name">Dennis</span>
-              <svg class="user__marker" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user__marker" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L3.99564 5L0 0H8Z" />
               </svg>
               <div class="user__list">
@@ -71,16 +72,28 @@
             <button class="header__btn btn changer">мои покупки</button>
           </div>
         </div>
+        <button class="burger" id="burger-btn">
+          <span></span>
+        </button>
       </div>
     </header>
+
     <main>
 
-      <!-- <section class="offer">
+      <section class="offer">
         <div class="offer__alpha-wrapper swiper container">
           <div class="swiper-wrapper offer__wrapper">
-            
+
             <div class="swiper-slide offer__slide">
               <img src="../img/pages/home/offer/bg-img_1.png" alt="" class="offer__slide-img">
+              <div class="offer__slide-info">
+                <p class="offer__slide-text">
+                  Иван Землянский.
+                </p>
+                <p class="offer__slide-text">
+                  Чемпион Европы до 17 лет!
+                </p>
+              </div>
             </div>
             <div class="swiper-slide offer__slide">
               <img src="../img/pages/home/offer/bg-img_1.png" alt="" class="offer__slide-img">
@@ -91,35 +104,48 @@
 
           </div>
         </div>
-        <div class="offer__block container">
+        <div class="offer__block ">
           <div class="offer__navigation">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.3477 10.8477V12.6523H7.34766L12.375 17.7227L11.0859 19.0117L3.82422 11.75L11.0859 4.48828L12.375 5.77734L7.34766 10.8477H18.3477Z" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.3477 10.8477V12.6523H7.34766L12.375 17.7227L11.0859 19.0117L3.82422 11.75L11.0859 4.48828L12.375 5.77734L7.34766 10.8477H18.3477Z" />
+              </svg>
+
+            </div>
           </div>
 
-          <div class="offer__text">
-            <h1 class="offer__title">
-              <span class="colorized">
-                Шахматная<br>
-                школа<br>
-              </span>
-              Ярослава Призанта
-            </h1>
-            <p class="offer__description">
-              Опытные дипломированные тренеры и отличные результаты
-            </p>
-            <div class="offer__text-bg offer__text-bg_1"></div>
-            <div class="offer__text-bg offer__text-bg_2"></div>
-          </div>
+          <div class="offer__block-wrapper_2 container">
+            <div class="offer__text">
+              <h1 class="offer__title">
+                <span class="colorized">
+                  Шахматная<br>
+                  школа<br>
+                </span>
+                Ярослава Призанта
+              </h1>
+              <p class="offer__description">
+                Опытные дипломированные тренеры и отличные результаты
+              </p>
+              <div class="offer__text-bg offer__text-bg_1"></div>
+              <div class="offer__text-bg offer__text-bg_2"></div>
+            </div>
 
-          <div class="offer__block-wrapper">
-            <button class="offer__btn btn btn__submit"><img src="../img/pages/home/offer/btn-img.svg"
-                alt="">ЗАПИСАТЬСЯ</button>
+            <div class="offer__block-wrapper">
+              <button class="offer__btn btn btn__submit"><img src="../img/pages/home/offer/btn-img.svg"
+                  alt="">ЗАПИСАТЬСЯ</button>
+            </div>
           </div>
 
         </div>
         <div class="offer__bg"></div>
-      </section> -->
+      </section>
 
       <section class="preferences container_wide">
         <div class="preferences__wrapper container">
@@ -482,6 +508,7 @@
           данных
         </p>
       </section>
+
     </main>
 
     <footer class="footer">
@@ -545,13 +572,28 @@
         </svg>
       </a>
     </footer>
+
+    <div class="popup-form-submit">
+      <div class="popup-form-submit__background">
+      </div>
+      <div class="popup-form-submit__body container">
+        <div class="popup-form-submit__body-wrapper">
+          <p class="popup-form-submit__title">
+            отлично!
+          </p>
+          <p class="popup-form-submit__text">
+            Ваша заявка отправлена. Мы свяжемся с Вами в ближайшее время
+          </p>
+          <button class="popup-form-submit__btn btn">ОК</button>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="../js/header.js"></script>
+  <script src="../js/pages/home.js"></script>
 
-  <script>
-
-  </script>
 </body>
 
 </html>
