@@ -198,7 +198,7 @@
           color: #000000;
           cursor: pointer;
           transition: all 0.3s ease 0s;
-          &:hover{
+          &:hover {
             color: $colorRed;
           }
         }
@@ -214,20 +214,43 @@
       cursor: pointer;
       transition: all 0.3s ease 0s;
       background: none;
+      &.header__burger_active {
+        span {
+          width: 30px;
+          height: 2px;
+          transition: all 0.3s ease 0s;
+          transform: rotate(45deg);
+
+          /*   отдельные стили для before - after   */
+          &:before {
+            width: 30px;
+            height: 2px;
+            top: 0;
+            bottom: 0;
+          }
+
+          &:after {
+            transform: rotate(90deg);
+            width: 30px;
+            height: 2px;
+            top: 0;
+            bottom: 0;
+          }
+        }
+      }
+
       &:hover {
         span {
           &,
           &:before,
           &:after {
-            position: absolute;
-            right: 0;
-            display: block;
             background: $colorRed;
           }
         }
       }
       span {
         width: 30px;
+        height: 2px;
 
         &,
         &:before,

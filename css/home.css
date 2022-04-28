@@ -647,15 +647,39 @@ span.colorized {
   background: none;
 }
 
+.header .header__wrapper .burger.header__burger_active span {
+  width: 30px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /*   отдельные стили для before - after   */
+}
+
+.header .header__wrapper .burger.header__burger_active span:before {
+  width: 30px;
+  height: 2px;
+  top: 0;
+  bottom: 0;
+}
+
+.header .header__wrapper .burger.header__burger_active span:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 30px;
+  height: 2px;
+  top: 0;
+  bottom: 0;
+}
+
 .header .header__wrapper .burger:hover span, .header .header__wrapper .burger:hover span:before, .header .header__wrapper .burger:hover span:after {
-  position: absolute;
-  right: 0;
-  display: block;
   background: #FB5353;
 }
 
 .header .header__wrapper .burger span {
   width: 30px;
+  height: 2px;
   /*   отдельные стили для before - after   */
 }
 
@@ -1175,7 +1199,7 @@ span.colorized {
   z-index: 10;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   width: 58px;
   height: 58px;
   -webkit-transition: all 0.3s ease 0s;
@@ -2033,6 +2057,9 @@ span.colorized {
 
 .offer .offer__block .offer__block-wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offer .offer__block .offer__block-wrapper .offer__btn {
