@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- стили слайдера -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- стили страницы -->
   <link rel="stylesheet" href="../css/videos.css">
 
@@ -129,8 +127,11 @@
             <img src="../img/stable/icons/search.svg" alt="">
           </button>
         </div>
+
+
         <div class="videos-block">
           <aside class="filter">
+            <p class="filter__description">Фильтр</p>
             <div class="filter__list">
               <div class="filter__item">
                 <div class="filter__header">
@@ -140,7 +141,6 @@
                 <div class="filter__body">
                   <label for="opening_1" class="filter__label">
                     <input type="checkbox" class="filter__checkbox" id="opening_1">
-                    <!-- сделать блок  -->
                     <span class="filter__text">Голландская защита</span>
                   </label>
                   <label for="opening_2" class="filter__label">
@@ -195,7 +195,7 @@
               </div>
               <div class="filter__item">
                 <div class="filter__header">
-                  <p class="filter__title">Цвет</p>
+                  <p class="filter__title">Рейтинг</p>
                   <button class="filter__btn"><span></span></button>
                 </div>
                 <div class="filter__body">
@@ -238,10 +238,301 @@
                 </div>
               </div>
             </div>
+            <div class="filter__nav">
+              <button class="btn filter__nab-btn_submit">Применить</button>
+              <button class="filter__nab-btn_reset">сбросить</button>
+            </div>
           </aside>
-          <ul class="videos__list">
-            <li class="videos__item"></li>
-          </ul>
+          <div class="videos-wrapper">
+            <ul class="videos__list">
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_1.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Защита Каро-Канн
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается современные варианты дебютной теории, с помощью которых Вы сможете
+                    получать отличные позиции на практике
+                  </p>
+                  <div class="videos__item-info">
+
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_2.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Итальянская партия, простая схема для 2-3 разряда
+                  </p>
+                  <p class="videos__item-text">
+                    1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.g3
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_1.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Испанская партия (продолжение системы Юртаева)
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается современные варианты дебютной теории, с помощью которых Вы сможете
+                    получать отличные позиции на практике
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_2.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Каро - Канн, простая схема для 3 разряда
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается современные варианты дебютной теории, с помощью которых Вы сможете
+                    получать отличные позиции на практике
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_1.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Итальянская партия, простая схема для 2-3 разряда
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается напористая и активная схема против любителей защиты Каро - Канн 2.с4!
+                    Как правило, на любительском уровне
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_2.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Вариант Алапина 1.е4 с5 2.c3 e6!
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается напористая и активная схема против любителей защиты Каро - Канн 2.с4!
+                    Как правило, на любительском уровне
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_1.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Вариант Алапина 1.е4 с5 2.c3 e6!
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается напористая и активная схема против любителей защиты Каро - Канн 2.с4!
+                    Как правило, на любительском уровне
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="videos__item">
+                <a href="#" class="videos__item-link">
+                  <img src="../img/pages/videos/videos-list-img_2.png" alt="" class="videos__item-img">
+                  <p class="videos__item-title">
+                    Испанская партия (продолжение системы Юртаева)
+                  </p>
+                  <p class="videos__item-text">
+                    Вашему вниманию предлагается напористая и активная схема против любителей защиты Каро - Канн 2.с4!
+                    Как правило, на любительском уровне
+                  </p>
+                  <div class="videos__item-info">
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Время:</span>
+                      <span class="video__info-value">3 ч. 30 мин.</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Цвет:</span>
+                      <span class="video__info-value">белые</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Год:</span>
+                      <span class="video__info-value">2013</span>
+                    </div>
+                    <div class="videos__info-block">
+                      <span class="video__info-name">Elo Fide:</span>
+                      <span class="video__info-value">1500-2000</span>
+                    </div>
+
+                    <div class="videos__more">
+                      <span class="video__more-price">₽ 2500</span>
+                      <span class="video__more-arrow"></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="vidios-pages">
+              <button class="vidios-pages__btn current">01</button>
+              <button class="vidios-pages__btn">02</button>
+              <button class="vidios-pages__btn">03</button>
+              <button class="vidios-pages__btn">04</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
