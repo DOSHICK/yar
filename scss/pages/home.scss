@@ -1,6 +1,9 @@
 @import "../components/stable/stable-all";
 @import "../components/layout/layout-all";
 
+@import "../components/helpers/arrow__link";
+@import "../components/helpers/socials";
+
 @import "../components/blocks/preferences";
 @import "../components/blocks/team";
 @import "../components/blocks/join";
@@ -69,9 +72,15 @@
         bottom: unset;
         svg {
           fill: #000;
+          transition: all 0.3s ease 0s;
         }
         &::after {
           content: none;
+        }
+        &:hover{
+          svg{
+            fill: $colorRed;
+          }
         }
       }
       .swiper-button-prev {
