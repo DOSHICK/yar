@@ -158,6 +158,12 @@
             line-height: 160%;
             color: #808080;
             &:hover {
+              .filter__text {
+                color: #808080;
+                &::before{
+                  border: 2px solid #c2c2c2;
+                }
+              }
             }
 
             .filter__checkbox {
@@ -188,6 +194,8 @@
                 margin: 0px 28px 0px 0px;
               }
             }
+
+            
           }
         }
       }

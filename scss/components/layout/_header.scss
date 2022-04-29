@@ -344,12 +344,14 @@
                 }
               }
               .nav__link {
+                font-size: 24px;
+              line-height: 29px;
               }
             }
           }
         }
         .header__btn {
-          margin: 0;
+          margin: 80px 0px 0px 0px ;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -358,28 +360,26 @@
         .user-block {
           display: flex;
           flex-direction: column;
-          margin: 0px 0px 0px 0px;
+          margin: 34px 0px 30px 0px;
           .user {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             .user__img {
-              order: 2;
             }
             .user__name {
-              order: 3;
             }
             svg.user__marker {
               display: none;
             }
 
             .user__list {
-              position: relative;
+              position: absolute;
               visibility: visible;
-              order: 1;
               width: unset;
-              top: unset;
-              left: unset;
-              transform: none;
+              top: 100px;
+              left: 50%;
+              transform: translateX(-50%);
               width: unset;
               padding: 0;
               display: flex;
@@ -387,7 +387,7 @@
               align-items: center;
               box-shadow: none;
               border-radius: unset;
-              margin: 0px 40px 0px 0px;
+              margin: 0px 0px 0px 0px;
               .user__link {
                 width: unset;
                 text-transform: uppercase;
