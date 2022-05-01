@@ -1,34 +1,20 @@
-.socials {
+.ya-share2 {
   display: flex;
   flex-direction: row;
-  .socials__item {
-    margin: 0px 40px 0px 0px;
+  .ya-share2__item {
+    margin: 0px 40px 0px 0px !important; 
     &:last-child{
       margin: 0;
     }
-    .socials__link {
-      svg {
-        fill: $colorBlack;
+    .ya-share2__link {
+      span.ya-share2__badge {
+        background: $colorBlack;
         transition: all 0.3s ease 0s;
       }
       cursor: pointer;
       transition: all 0.3s ease 0s;
       &:hover {
-        svg {
-          fill: $colorRed;
-        }
-      }
-      &_png {
-        width: 20px;
-        height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $colorBlack;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        &:hover {
+        span.ya-share2__badge {
           background: $colorRed;
         }
       }

@@ -1,0 +1,22 @@
+.videos__more {
+  margin: 24px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .video__more-price {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .video__more-arrow {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: none;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+  }
+}

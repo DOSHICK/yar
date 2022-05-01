@@ -1,0 +1,21 @@
+.videos__item-info {
+  margin: 20px 0px 0px 0px;
+  color: #808080;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  .videos__info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+
+    .video__info-name {
+      width: 70px;
+      margin: 0px 20px 0px 0px;
+    }
+    .video__info-value {
+    }
+  }
+  
+}
