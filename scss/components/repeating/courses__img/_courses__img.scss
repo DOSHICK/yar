@@ -1,0 +1,36 @@
+.courses-img {
+  height: 206px;
+  width: 368px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    svg.courses-img__play {
+      circle {
+        stroke: #cccccc;
+      }
+      path {
+        fill: #cccccc;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  svg.courses-img__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease 0s;
+    circle {
+      stroke: #fff;
+      transition: all 0.3s ease 0s;
+    }
+    path {
+      fill: #fff;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
