@@ -4,7 +4,7 @@
   .ya-share2__item {
     margin: 0px 40px 0px 0px !important; 
     &:last-child{
-      margin: 0;
+      margin: unset !important;
     }
     .ya-share2__link {
       span.ya-share2__badge {
