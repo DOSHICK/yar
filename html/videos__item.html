@@ -124,11 +124,11 @@
               <span class="video__more-arrow"></span>
             </div>
           </div>
-          <div class="lesson__nav">
+          <div class="btns-nav">
             <button class="promo" id="promo-find">Есть промокод?</button>
-            <form class="promo__block">
+            <form class="promo__block" onsubmit='return false'>
               <input type="text" class="promo__block-input" id="promo-input">
-              <button class="promo__block-btn btn btn__submit" id="promo-check" type="submit">ОК</button>
+              <button class="promo__block-btn btn btn__submit" id="promo-check" type="button">ОК</button>
             </form>
             <div class="promo__answer">
               <table class="promo__info">
@@ -566,6 +566,8 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- скрипт для правильной работы бургера -->
   <script src="../js/header.js"></script>
+  <!-- работа с блоком .btns-nav -->
+  <script src="../js/btns-nav.js"></script>
   <!-- скрипт этой страницы + работа с слайдером-->
   <script src="../js/pages/videos__item.js"></script>
   <!-- ссылки яндекс метрики -->

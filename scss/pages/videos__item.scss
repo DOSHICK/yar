@@ -3,6 +3,7 @@
 
 @import "../components/helpers/breadcrumbs";
 @import "../components/repeating/videos__item/videos__item";
+@import "../components/repeating/btns-nav/btns-nav";
 
 .lesson {
   display: grid;
@@ -51,129 +52,7 @@
         }
       }
     }
-    .lesson__nav {
-      margin: 30px 0px 30px 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 332px;
-      & button {
-        width: 100%;
-        padding: 24px 24px 24px 24px;
-        cursor: pointer;
-        margin: 0px 0px 10px 0px;
-        &:last-child {
-          margin: 0px 0px 0px 0px;
-        }
-      }
-      // при нажатии на кнопку .promo
-      &.promo-visible {
-        .promo__block {
-          display: flex;
-        }
-        .pgn-btn {
-          display: none;
-        }
-      }
-      // Если Промокод есть в списке
-      &.promo-active {
-        .promo__block {
-          display: none;
-        }
-        .promo__answer {
-          .promo__info {
-            display: table;
-            align-self: flex-start;
-          }
-          .promo__error {
-            display: none;
-          }
-        }
-      }
-      // Если Промакода в списке нет
-      &.promo-error {
-        .promo__answer {
-          .promo__info {
-            display: none;
-          }
-          .promo__error {
-            display: block;
-            min-height: 78px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 160%;
-            letter-spacing: -0.02em;
-            color: #808080;
-            margin: 0px 0px 10px 0px;
-          }
-        }
-      }
-      .promo {
-        background: none;
-        border: none;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 120%;
-        text-transform: uppercase;
-      }
-      .promo__block {
-        max-height: 64px;
-        width: 100%;
-        display: none;
-        margin: 0px 0px 10px 0px;
-        .promo__block-input {
-          outline: none;
-          width: 100%;
-          background: #ffffff;
-          border: 2px solid #e3e3e3;
-          padding: 22px 13px 23px 24px;
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 19px;
-          &:focus {
-            border-color: #000;
-          }
-        }
-        .promo__block-btn {
-          background: #cccccc;
-          width: 64px;
-          cursor: pointer;
-          transition: all 0.3s ease 0s;
-          &:hover {
-            background-color: #b5b5b5;
-          }
-        }
-      }
-      .promo__answer {
-        width: 100%;
-        .promo__info {
-          display: none;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 160%;
-          letter-spacing: -0.02em;
-          color: #808080;
-          margin: 0px 0px 10px 0px;
-          tr {
-            td {
-              &:first-child {
-                width: 120px;
-              }
-            }
-          }
-        }
-        .promo__error {
-          display: none;
-          span {
-            font-weight: 600;
-          }
-        }
-      }
-      .buy-bnt {
-      }
-      .pgn-btn {
-      }
-    }
+    
   }
   .lesson__block_3 {
     grid-column: 3;
@@ -230,10 +109,6 @@
       }
     }
     .lesson__block_2 {
-      .lesson__nav {
-        max-width: none;
-        width: 100%;
-      }
     }
     .lesson__block_3 {
     }
