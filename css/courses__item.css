@@ -1700,13 +1700,17 @@ span.colorized {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .offer::before {
   content: "";
   position: absolute;
   width: 50%;
-  height: 100%;
+  height: calc(100% - 6px);
   left: 0;
   top: 0;
   background: #1f1f1f;
@@ -1714,7 +1718,7 @@ span.colorized {
 
 .offer .offer__wrapper {
   padding-top: 56px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   background: #1f1f1f;
   width: 100%;
   -webkit-box-flex: 0;
@@ -1742,6 +1746,12 @@ span.colorized {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .offer .offer__wrapper {
+    padding-bottom: 50px;
   }
 }
 
@@ -1846,6 +1856,24 @@ span.colorized {
 
 .offer .btns-nav .promo {
   color: #fff;
+}
+
+.offer .arrow-link {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 700px) {
+  .offer .arrow-link {
+    display: none;
+  }
+}
+
+.offer .arrow-link svg {
+  fill: #fff;
 }
 
 @media (max-width: 900px) {
