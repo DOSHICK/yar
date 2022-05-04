@@ -266,6 +266,36 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 35px 0px 35px;
+  margin: 0 auto;
+}
+
+.container_almoust-all {
+  max-width: 1200px;
+  z-index: 1;
+  padding: 0px 80px 0px 80px;
+}
+
+@media (max-width: 1100px) {
+  .container_almoust-all {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container_almoust-all {
+    padding: 0px 35px 0px 35px;
+  }
+}
+
+.container_almoust-all::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: calc(100% - 6px);
+  left: 0;
+  top: 0;
+  background: #1f1f1f;
 }
 
 .btn {
@@ -300,7 +330,7 @@ main {
 }
 
 .btn.btn__submit:hover {
-  background: #ED4B4B;
+  background: #ed4b4b;
 }
 
 h1 {
@@ -491,8 +521,6 @@ span.colorized {
   font-size: 13px;
   line-height: 16px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link:hover {

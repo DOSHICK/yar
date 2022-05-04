@@ -95,6 +95,7 @@
           flex-direction: row;
           justify-content: space-between;
           padding: 0px 0px 30px 58px;
+
           .filter__title {
             font-weight: 700;
             font-size: 16px;
@@ -157,14 +158,6 @@
             font-size: 16px;
             line-height: 160%;
             color: #808080;
-            &:hover {
-              .filter__text {
-                color: #808080;
-                &::before{
-                  border: 2px solid #c2c2c2;
-                }
-              }
-            }
 
             .filter__checkbox {
               position: absolute;
@@ -181,7 +174,15 @@
             .filter__text {
               display: flex;
               align-items: center;
+              cursor: pointer;
+              transition: all 0.3s ease 0s;
+              &:hover {
+                &::before {
+                  border: 2px solid #888888;
+                }
+              }
               &::before {
+                transition: all 0.3s ease 0s;
                 opacity: 1;
                 content: "";
                 display: inline-block;
@@ -194,8 +195,6 @@
                 margin: 0px 28px 0px 0px;
               }
             }
-
-            
           }
         }
       }
@@ -242,7 +241,6 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      
     }
 
     .vidios-pages {
@@ -337,7 +335,6 @@
     width: 100%;
 
     .videos__list {
-      
     }
   }
 
@@ -443,7 +440,6 @@
     .videos-wrapper {
       .videos__list {
         .videos__item {
-
         }
       }
 
@@ -516,7 +512,6 @@
     .videos-wrapper {
       .videos__list {
         .videos__item {
-
           .videos__item-link {
             .videos__item-img {
             }

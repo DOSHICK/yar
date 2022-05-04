@@ -41,6 +41,8 @@
       position: relative;
       cursor: pointer;
       transition: all 0.3s ease 0s;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
     }
   }
 }
@@ -48,6 +50,7 @@
 @media (max-width: 850px) {
   .offer {
     &::before {
+      background: unset;
     }
     .offer__wrapper {
       flex-direction: column;

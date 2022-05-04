@@ -12,13 +12,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   &::before {
-    @media (max-width: px) {
-    }
     content: "";
     position: absolute;
     width: 50%;
-    height: calc(100% - 6px);
+    height: calc(100% - 0px);
     left: 0;
     top: 0;
     background: #1f1f1f;
@@ -116,7 +115,7 @@
     }
   }
   .btns-nav {
-    margin: 0px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     .promo {
       color: #fff;
     }
