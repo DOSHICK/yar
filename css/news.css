@@ -1722,6 +1722,29 @@ span.colorized {
   margin: unset;
 }
 
+@media (max-width: 500px) {
+  .news .news__filters label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news .news__filters label:last-child span {
+    margin: 18px 0px 0px 0px;
+  }
+}
+
 .news .news__filters label input {
   position: absolute;
   opacity: 0;
@@ -1753,6 +1776,12 @@ span.colorized {
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 500px) {
+  .news .news__filters label span {
+    margin: 0px 0px 0px 15px;
+  }
 }
 
 .news .news__filters label span::before {
