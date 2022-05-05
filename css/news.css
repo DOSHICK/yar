@@ -1699,6 +1699,16 @@ span.colorized {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .news .news__filters {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .news .news__filters label {
@@ -1706,6 +1716,10 @@ span.colorized {
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.news .news__filters label:first-child span {
+  margin: unset;
 }
 
 .news .news__filters label input {
