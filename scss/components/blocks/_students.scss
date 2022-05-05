@@ -1,3 +1,5 @@
+@import "../repeating/students__item/students__item";
+
 .students {
   padding-top: 70px;
   padding-bottom: 180px;
@@ -45,43 +47,6 @@
   }
 
   .students__wrapper {
-    .students__slide {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto 44px 10px auto;
-      padding: 0px 0px 40px 0px;
-      width: 304px;
-      color: #000;
-      transition: all 0.3s ease 0s;
-      &:hover{
-        .students__slide-title {
-          text-decoration: underline;
-        }
-      }
-      .students__slide-img {
-        width: 100%;
-        height: 100%;
-      }
-      .students__slide-date {
-        margin: 24px 0px 13px 0px;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 120%;
-        color: #8c8c8c8c;
-      }
-      .students__slide-title {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-      }
-      .students__slide-description {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #808080;
-        grid-row: 5;
-      }
-    }
   }
 }
 
@@ -105,14 +70,14 @@
       }
     }
     .students__wrapper {
-      .students__slide {
-        .students__slide-img {
+      .students__item {
+        .students__item-img {
         }
-        .students__slide-date {
+        .students__item-date {
         }
-        .students__slide-title {
+        .students__item-title {
         }
-        .students__slide-description {
+        .students__item-description {
         }
       }
     }

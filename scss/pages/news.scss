@@ -1,0 +1,108 @@
+@import "../components/stable/stable-all";
+@import "../components/layout/layout-all";
+
+@import "../components/helpers/breadcrumbs";
+
+@import "../components/blocks/join";
+@import "../components/blocks/form";
+@import "../components/helpers/arrow__link";
+
+@import "../components/repeating/students__item/students__item";
+@import "../components/repeating/page-choose/page-choose";
+
+.news {
+  padding-top: 0px;
+  padding-bottom: 120px;
+  .news__title {
+    margin: 0px 0px 70px 0px;
+  }
+  .news__filters {
+    margin: 0px 0px 32px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    label {
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + span {
+          color: $colorRed;
+          &::before {
+            background: url("../img/pages/news/filter/checked.svg");
+            background-size: contain;
+            background-position: center center;
+          }
+        }
+      }
+      span {
+        z-index: 2;
+        margin: 0px 0px 0px 30px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 120%;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+
+        &::before {
+          margin: 0px 17px 0px 0px;
+          display: block;
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url("../img/pages/news/filter/un-checked.svg");
+          background-size: contain;
+          background-position: center center;
+        }
+      }
+    }
+  }
+  .news__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    .news__block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .students__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin: 0px 0px 130px 0px;
+        &:nth-last-child(-n + 3) {
+          margin: 0;
+        }
+        .students__item-img {
+          overflow: hidden;
+        }
+        @media (max-width: 500px) {
+          margin: 0px 0px 110px 0px;
+          &:nth-last-child(-n + 3) {
+            margin: 0px 0px 110px 0px;
+          }
+          &:last-child {
+            margin: 0;
+          }
+          width: 100%;
+          max-width: none;
+          grid-template-rows: auto;
+          .students__item-img {
+            height: auto;
+          }
+        }
+      }
+    }
+    .page-choose {
+      margin: 35px 0px 0px 0px;
+      align-self: center;
+    }
+  }
+}
