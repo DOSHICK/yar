@@ -886,13 +886,13 @@ span.colorized {
     display: none;
   }
   .header .header__wrapper .header__block .user-block .user:hover .user__list {
-    position: relative;
-    top: unset;
-    left: unset;
-    -webkit-transform: none;
-            transform: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: unset;
-    padding: 0px 0px 0px 0px;
+    padding: 15px 10px 10px 10px;
   }
   .header .header__wrapper .header__block .user-block .user:hover .user__list .user__link {
     margin: 0px 0px 0px 0px;
