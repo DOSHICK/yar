@@ -1254,6 +1254,42 @@ span.colorized {
   position: relative;
 }
 
+@media (max-width: 1150px) {
+  .offer .header.burger-visible {
+    background: #fff;
+  }
+  .offer .header.burger-visible .header__wrapper .burger span {
+    background: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .burger span::before, .offer .header.burger-visible .header__wrapper .burger span::after {
+    background: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .header__logo {
+    color: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .header__logo .header__under-logo {
+    color: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__link svg {
+    fill: #fff;
+  }
+  .offer .header.burger-visible .header__wrapper .header__block .nav .nav__list .nav__item .nav__link {
+    color: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .header__block .header__btn {
+    color: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .user-block .user .user__name {
+    color: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .user-block .user svg.user__marker {
+    fill: #000;
+  }
+  .offer .header.burger-visible .header__wrapper .user-block .header__btn {
+    color: #000;
+  }
+}
+
 .offer .header .header__wrapper .burger span {
   background: #fff;
 }
