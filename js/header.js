@@ -38,5 +38,31 @@ function changeBodyScrolling() {
 }
 
 
+let listedBlocks = document.querySelectorAll("li.nav__item.listed");
+function changeLinksToBtns() {
+  if (window.innerWidth > 1150) {
+    for (let index = 0; index < listedBlocks.length; index++) {
+      let currentBlock = listedBlocks[index]
+      let requiredLink = currentBlock.querySelector("a.nav__link")
+      let requiredLinkHref = requiredLink.href;
+      requiredLink.setAttribute("value", requiredLinkHref);
+      requiredLink.removeAttribute("href");
+
+      requiredLink.onclick = function(){
+        let itemList = currentBlock.querySelector(".nav__item__list")
+        itemList.classList.toggle("visible")
+      }
+    }
+  } else {
+    for (let index = 0; index < listedBlocks.length; index++) {
+      let currentBlock = listedBlocks[index]
+      let requiredLink = currentBlock.querySelector("a.nav__link")
+      let requiredLinkHref = requiredLink.href;
+      let requiredLinkValue = requiredLink.value;
+      requiredLink.setAttribute("value", requiredLinkHref);
+    }
+  }
+}
+changeLinksToBtns()
 
 

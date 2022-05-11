@@ -479,12 +479,8 @@ span.colorized {
 .header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__item__list {
   visibility: hidden;
   position: absolute;
-}
-
-.header .header__wrapper .header__block .nav .nav__list .nav__item.listed:hover .nav__item__list {
   top: 30px;
   z-index: 10;
-  visibility: visible;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,11 +503,15 @@ span.colorized {
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.header .header__wrapper .header__block .nav .nav__list .nav__item.listed:hover .nav__item__list .nav__link {
+.header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__item__list .nav__link {
   margin: 15px 0px 15px 0px;
   font-weight: 700;
   font-size: 13px;
   line-height: 120%;
+}
+
+.header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__item__list.visible {
+  visibility: visible;
 }
 
 .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link {
