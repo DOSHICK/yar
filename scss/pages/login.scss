@@ -116,21 +116,31 @@
             .nav__item {
               &.listed {
                 .nav__link {
+                  
                   svg {
                     fill: #fff;
                   }
                 }
                 .nav__item__list {
+                  a{
+                    color: #000;
+                    cursor: pointer;
+                    &:hover{
+                    color: $colorRed
+                    }
+                  }
                 }
                 &:hover {
                   .nav__item__list {
-                    .nav__link {
-                    }
+                    
                   }
                 }
               }
               .nav__link {
                 color: #fff;
+                &:hover{
+                  color: $colorRed
+                  }
               }
             }
           }
@@ -159,6 +169,7 @@
           svg.user__marker {
           }
           .user__list {
+            background: #fff;
             .user__link {
             }
           }

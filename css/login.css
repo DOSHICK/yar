@@ -1310,8 +1310,21 @@ span.colorized {
   fill: #fff;
 }
 
+.offer .header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__item__list a {
+  color: #000;
+  cursor: pointer;
+}
+
+.offer .header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__item__list a:hover {
+  color: #fb5353;
+}
+
 .offer .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link {
   color: #fff;
+}
+
+.offer .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link:hover {
+  color: #fb5353;
 }
 
 .offer .header .header__wrapper .header__block .header__btn {
@@ -1324,6 +1337,10 @@ span.colorized {
 
 .offer .header .user-block .user svg.user__marker {
   fill: #fff;
+}
+
+.offer .header .user-block .user:hover .user__list {
+  background: #fff;
 }
 
 .offer .header .user-block .header__btn {
