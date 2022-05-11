@@ -1324,6 +1324,12 @@ span.colorized {
   justify-self: flex-end;
 }
 
+@media (max-width: 500px) {
+  .offer .pass .pass__wrapper {
+    width: 100%;
+  }
+}
+
 .offer .pass .pass__wrapper input {
   padding: 17px 26px 17px 26px;
   border: none;
