@@ -1339,10 +1339,21 @@ span.colorized {
   border-radius: 2px;
   margin: 0px 0px 10px 0px;
   color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .offer .pass .pass__wrapper input:last-child {
   margin: 0;
+}
+
+.offer .pass .pass__wrapper input:not(:placeholder-shown) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.offer .pass .pass__wrapper input:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .offer .pass .pass__wrapper .pass__title {
@@ -1356,10 +1367,12 @@ span.colorized {
 .offer .pass .pass__wrapper .pass-submit-btn {
   padding: 20px 20px 20px 20px;
   color: #fff;
+  border: 2px solid #fff;
 }
 
 .offer .pass .pass__wrapper .pass-submit-btn:hover {
-  border-color: #808080;
+  background: #fff;
+  color: #000;
 }
 
 .offer .pass .pass__wrapper .pass-btn-back {
@@ -1390,7 +1403,7 @@ span.colorized {
 }
 
 .offer .pass .pass__wrapper .pass-btn-back:hover {
-  color: #808080;
+  text-decoration: underline;
 }
 
 .offer .pass .pass__wrapper .pass-error {
@@ -1433,7 +1446,7 @@ span.colorized {
 }
 
 .offer .pass .pass__wrapper .pass__login .forget-password:hover {
-  color: #808080;
+  text-decoration: underline;
 }
 
 .offer .pass .pass__wrapper .pass__login .remember-password {
@@ -1567,7 +1580,7 @@ span.colorized {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
-  color: #8E8CA0;
+  color: #8e8ca0;
 }
 
 @media (max-width: 700px) {
