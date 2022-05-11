@@ -1542,6 +1542,10 @@ span.colorized {
 }
 
 .offer .pass .pass__footer {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   padding-top: 0px;
   padding-bottom: 60px;
   display: -webkit-box;
