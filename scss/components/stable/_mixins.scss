@@ -2,9 +2,10 @@
   font-family: "San Francisco Pro Display";
 }
 
+
 @mixin mainPaddingOfHeaderHeight {
-  padding-top: 140px;
+  padding-top: $headerHeight1;
   @media (max-width: 500px) {
-    padding-top: 112px;
+    padding-top: $headerHeight2;
   }
 }

@@ -1237,341 +1237,200 @@ span.colorized {
   background: #fb5353;
 }
 
-.breadcrumbs {
-  padding-top: 50px;
-  padding-bottom: 40px;
-}
-
-.breadcrumbs .breadcrumbs__link {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 120%;
-  color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.breadcrumbs .breadcrumbs__link::after {
-  content: ">";
-  padding: 0px 10px 0px 10px;
-}
-
-.breadcrumbs .breadcrumbs__link:last-child {
-  color: #000000;
-}
-
-.breadcrumbs .breadcrumbs__link:last-child::after {
-  content: unset;
-}
-
-.breadcrumbs .breadcrumbs__link:hover {
-  color: #fb5353;
-}
-
-@media (max-width: 500px) {
-  .breadcrumbs {
-    padding-top: 36px;
-    padding-bottom: 60px;
-  }
-}
-
-.join {
-  padding-top: 119px;
-  padding-bottom: 60px;
-  background: url("../img/pages/home/join/join-bg.png");
-  background-repeat: no-repeat;
+.offer {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background: url("../img/pages/login/offer__bg.png");
+  background-position: left;
   background-size: cover;
-  color: #ffffff;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.join .join__wrapper .join__title {
-  text-transform: uppercase;
+.offer .header {
+  background: none;
+  position: relative;
 }
 
-.join .join__wrapper .join__list {
-  margin: 32px 0px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.offer .header .header__wrapper .burger span {
+  background: #fff;
 }
 
-.join .join__wrapper .join__list .join__item {
-  margin: 30px 0px 0px 0px;
-  max-width: 300px;
-  border-top: 3px #ffffff solid;
-  padding: 20px 0px 0px 0px;
+.offer .header .header__wrapper .burger span::before, .offer .header .header__wrapper .burger span::after {
+  background: #fff;
 }
 
-.join .join__wrapper .join__list .join__item .join__item-title {
-  margin: 20px 0px 0px 0px;
-  max-width: 220px;
-  text-transform: uppercase;
+.offer .header .header__wrapper .header__logo {
+  color: #fff;
 }
 
-.join .join__wrapper .arrow-link svg {
-  fill: #ffffff;
+.offer .header .header__wrapper .header__logo .header__under-logo {
+  color: #fff;
 }
 
-.join .join__wrapper .arrow-link svg:hover {
-  fill: #fb5353;
+.offer .header .header__wrapper .header__block .nav .nav__list .nav__item.listed .nav__link svg {
+  fill: #fff;
 }
 
-@media (max-width: 850px) {
-  .join {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .join .join__wrapper .join__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.offer .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link {
+  color: #fff;
 }
 
-@media (max-width: 520px) {
-  .join .join__wrapper .join__list .join__item {
-    max-width: none;
-    width: 100%;
-  }
+.offer .header .header__wrapper .header__block .header__btn {
+  color: #fff;
 }
 
-.form {
-  padding-top: 100px;
-  padding-bottom: 85px;
+.offer .header .user-block .user .user__name {
+  color: #fff;
 }
 
-.form .form__title {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 120%;
-  margin: 0px 0px 50px 0px;
-  padding: 0px 0px 0px 24px;
-  text-transform: uppercase;
+.offer .header .user-block .user svg.user__marker {
+  fill: #fff;
 }
 
-.form .form__form {
+.offer .header .user-block .header__btn {
+  color: #fff;
+}
+
+.offer .pass {
+  height: calc(100% - 140px);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 352px auto;
-      grid-template-columns: 352px auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "block1 block2" ".      privacy";
-  grid-gap: 16px;
 }
 
-.form .form__form .form__block .form__input,
-.form .form__form .form__block .form__textarea {
+@media (max-width: 500px) {
+  .offer .pass {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.offer .pass .pass__wrapper {
+  width: 360px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  justify-self: flex-end;
+}
+
+.offer .pass .pass__wrapper input {
+  padding: 17px 26px 17px 26px;
+  border: none;
   outline: none;
-  padding: 22px 24px 21px 24px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #e3e3e3;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.form .form__form .form__block .form__input::-webkit-input-placeholder,
-.form .form__form .form__block .form__textarea::-webkit-input-placeholder {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.form .form__form .form__block .form__input:-ms-input-placeholder,
-.form .form__form .form__block .form__textarea:-ms-input-placeholder {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.form .form__form .form__block .form__input::-ms-input-placeholder,
-.form .form__form .form__block .form__textarea::-ms-input-placeholder {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.form .form__form .form__block .form__input::placeholder,
-.form .form__form .form__block .form__textarea::placeholder {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.form .form__form .form__block .form__input:focus,
-.form .form__form .form__block .form__textarea:focus {
-  border: 1px solid #000000;
-}
-
-.form .form__form .form__block_1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: block1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 352px;
-}
-
-.form .form__form .form__block_1 .form__input_1 {
-  width: 352px;
-  height: 60px;
-}
-
-.form .form__form .form__block_1 .form__input_2 {
-  width: 352px;
-  height: 60px;
-  margin: 16px 0px 16px 0px;
-}
-
-.form .form__form .form__block_1 .form__inputs-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.form .form__form .form__block_1 .form__inputs-block .form__input_3 {
-  width: 169px;
-  height: 60px;
-}
-
-.form .form__form .form__block_1 .form__inputs-block .form__input_4 {
-  width: 169px;
-  height: 60px;
-}
-
-.form .form__form .form__block_2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: block2;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin: 0px 0px 10px 0px;
+  color: #fff;
 }
 
-.form .form__form .form__block_2 .form__textarea {
-  width: 100%;
-  height: 136px;
-  margin: 0px 0px 16px 0px;
-  resize: none;
+.offer .pass .pass__wrapper input:last-child {
+  margin: 0;
 }
 
-.form .form__form .form__block_2 .btn__submit {
-  width: 352px;
-  height: 60px;
-}
-
-.form .form__form .form__privacy {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: privacy;
-  margin: 50px 0px 0px 0px;
-  padding-left: 22px;
+.offer .pass .pass__wrapper .pass__title {
+  margin: 0px 0px 34px 0px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 120%;
-  color: #808080;
+  line-height: 160%;
+  letter-spacing: 0.01em;
 }
 
-.form .form__form .form__privacy a {
-  color: #808080;
-  text-decoration: underline;
+.offer .pass .pass__wrapper .pass-submit-btn {
+  padding: 20px 20px 20px 20px;
+  color: #fff;
+}
+
+.offer .pass .pass__wrapper .pass-submit-btn:hover {
+  border-color: #808080;
+}
+
+.offer .pass .pass__wrapper .pass-btn-back {
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.01em;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.form .form__form .form__privacy a:hover {
-  color: #fb5353;
+.offer .pass .pass__wrapper .pass-btn-back.pass-btn-back-center {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-@media (max-width: 830px) {
-  .form .form__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .form .form__form .form__block_1 {
-    max-width: unset;
-    width: 100%;
-  }
-  .form .form__form .form__block_1 .form__input_1 {
-    width: 100%;
-  }
-  .form .form__form .form__block_1 .form__input_2 {
-    width: 100%;
-  }
-  .form .form__form .form__block_1 .form__inputs-block .form__input_3 {
-    width: calc(50% - 8px);
-  }
-  .form .form__form .form__block_1 .form__inputs-block .form__input_4 {
-    width: calc(50% - 8px);
-  }
-  .form .form__form .form__block_2 {
-    margin: 16px 0px 0px 0px;
-  }
+.offer .pass .pass__wrapper .pass-btn-back:hover {
+  color: #808080;
 }
 
-@media (max-width: 500px) {
-  .form {
-    padding-top: 76px;
-    padding-bottom: 86px;
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-  .form .form__form .form__block_2 .btn__submit {
-    width: 100%;
-  }
-  .form .form__privacy {
-    text-align: left;
-  }
+.offer .pass .pass__wrapper .pass-error {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #a1a0ac;
+  margin: 0px 0px 10px 0px;
 }
 
-.arrow-link {
+.offer .pass .pass__wrapper .pass-error.disabled {
+  display: none;
+}
+
+.offer .pass .pass__wrapper .pass__block {
+  width: 100%;
+  display: none;
+}
+
+.offer .pass .pass__wrapper .pass__block.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer .pass .pass__wrapper .pass__login .forget-password {
+  margin: 0px 0px 30px 0px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.offer .pass .pass__wrapper .pass__login .forget-password:hover {
+  color: #808080;
+}
+
+.offer .pass .pass__wrapper .pass__login .remember-password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1582,45 +1441,109 @@ span.colorized {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 60px 0px 0px 0px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #a2a1ad;
 }
 
-.arrow-link svg {
-  z-index: 2;
-  fill: #000000;
+.offer .pass .pass__wrapper .pass__login .remember-password input {
+  margin: 0px 0px 0px 0px;
+  width: unset;
+  position: absolute;
+  opacity: 0;
+}
+
+.offer .pass .pass__wrapper .pass__login .remember-password input:checked + span::before {
+  background: url("../img/pages/login/input-dot.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.offer .pass .pass__wrapper .pass__login .remember-password span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.arrow-link svg:hover {
-  fill: #fb5353;
+.offer .pass .pass__wrapper .pass__login .remember-password span:hover::before {
+  border: 2px solid #797979;
 }
 
-.trainers {
-  padding: 0px 0px 140px 0px;
+.offer .pass .pass__wrapper .pass__login .remember-password span::before {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #ffe7e7;
+  background: transparent;
+  margin: 0px 28px 0px 0px;
 }
 
-.trainers .trainers__title {
-  margin-bottom: 100px;
+.offer .pass .pass__wrapper .pass__login .pass-to-register-btn {
+  margin: 12px 0px 0px 0px;
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.trainers .trainers__item {
-  width: 100%;
-  background: #ededed;
-  padding-top: 58px;
-  padding-bottom: 84px;
-  margin-bottom: 64px;
+.offer .pass .pass__wrapper .pass__login .pass-to-register-btn:hover {
+  color: #808080;
 }
 
-.trainers .trainers__item:last-child {
-  margin-bottom: 0;
+.offer .pass .pass__wrapper .pass__reset .pass-reset-btn {
+  margin: 20px 0px 30px 0px;
 }
 
-.trainers .trainers__item .trainers__item-wrapper {
+.offer .pass .pass__wrapper .pass__reset .pass-reset-error-link {
+  margin: 20px 0px 0px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: #a2a2ae;
+  letter-spacing: 0.01em;
+}
+
+.offer .pass .pass__wrapper .pass__reset .pass-reset-error-link a {
+  color: #a2a2ae;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.offer .pass .pass__wrapper .pass__register .pass-register-btn {
+  margin: 30px 0px 12px 0px;
+}
+
+.offer .pass .pass__footer {
+  padding-top: 0px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1628,63 +1551,18 @@ span.colorized {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #8E8CA0;
 }
 
-.trainers .trainers__item .trainers__item-wrapper .trainers__block .trainers__item-title {
-  margin: 40px 0px 40px 0px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 100.64%;
-  text-transform: uppercase;
-}
-
-.trainers .trainers__item .trainers__item-wrapper .trainers__item-text {
-  max-width: 672px;
-  color: #777777;
-}
-
-.trainers .trainers__item .trainers__item-wrapper .trainers__item-text p {
-  margin: 0px 0px 16px 0px;
-}
-
-@media (max-width: 1100px) {
-  .trainers .trainers__item {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .trainers .trainers__item .trainers__item-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .trainers .trainers__item .trainers__item-wrapper .trainers__block {
-    margin: 0px 0px 60px 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .trainers .trainers__item .trainers__item-wrapper .trainers__item-text {
-    max-width: none;
+@media (max-width: 700px) {
+  .offer .pass .pass__footer {
+    display: none;
   }
 }
-
-@media (max-width: 850px) {
-  .trainers .trainers__item {
-    background: unset;
-  }
-}
-/*# sourceMappingURL=trainers.css.map */
+/*# sourceMappingURL=login.css.map */

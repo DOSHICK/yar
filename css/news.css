@@ -304,7 +304,7 @@ main {
   line-height: 120%;
   text-transform: uppercase;
   background: none;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   padding: 11px 30px 11px 30px;
   border-radius: 40px;
   cursor: pointer;
@@ -365,7 +365,7 @@ h4 {
 }
 
 span.colorized {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .none-scroll {
@@ -407,7 +407,7 @@ span.colorized {
 }
 
 .header .header__wrapper .header__logo:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .header .header__wrapper .header__logo .header__under-logo {
@@ -524,11 +524,11 @@ span.colorized {
 }
 
 .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .header .header__wrapper .header__block .nav .nav__list .nav__item .nav__link:hover svg {
-  fill: #FB5353;
+  fill: #fb5353;
 }
 
 .header .header__wrapper .header__block .header__btn {
@@ -606,11 +606,11 @@ span.colorized {
 }
 
 .header .header__wrapper .header__block .user-block .user:hover .user__name {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .header .header__wrapper .header__block .user-block .user:hover svg.user__marker {
-  fill: #FB5353;
+  fill: #fb5353;
 }
 
 .header .header__wrapper .header__block .user-block .user:hover .user__list {
@@ -657,7 +657,7 @@ span.colorized {
 }
 
 .header .header__wrapper .header__block .header__socials .header__socials-link:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .header .header__wrapper .header__block .header__socials .ya-share2 {
@@ -710,7 +710,7 @@ span.colorized {
 }
 
 .header .header__wrapper .burger:hover span, .header .header__wrapper .burger:hover span:before, .header .header__wrapper .burger:hover span:after {
-  background: #FB5353;
+  background: #fb5353;
 }
 
 .header .header__wrapper .burger span {
@@ -880,7 +880,7 @@ span.colorized {
     padding: 0px 0px 0px 0px;
   }
   .header .header__wrapper .header__block .user-block .user .user__list .user__link:hover {
-    color: #FB5353;
+    color: #fb5353;
   }
   .header .header__wrapper .header__block .user-block .user:hover svg.user__marker {
     display: none;
@@ -995,7 +995,7 @@ span.colorized {
   content: "";
   width: 41px;
   height: 3px;
-  background: #FB5353;
+  background: #fb5353;
 }
 
 .footer .footer__wrapper .footer__block .footer__link {
@@ -1050,7 +1050,7 @@ span.colorized {
 }
 
 .footer .footer__wrapper .footer__block_3 .footer__policy .footer__policy-link:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .footer .footer__wrapper .footer__block_3 .footer__policy .footer__copywright {
@@ -1176,7 +1176,7 @@ span.colorized {
 
 .envelope .envelope__wrapper {
   border-radius: 50%;
-  background: #FB5353;
+  background: #fb5353;
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -1234,7 +1234,7 @@ span.colorized {
 }
 
 .ya-share2 .ya-share2__item .ya-share2__link:hover span.ya-share2__badge {
-  background: #FB5353;
+  background: #fb5353;
 }
 
 .breadcrumbs {
@@ -1267,7 +1267,7 @@ span.colorized {
 }
 
 .breadcrumbs .breadcrumbs__link:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 @media (max-width: 500px) {
@@ -1324,7 +1324,7 @@ span.colorized {
 }
 
 .join .join__wrapper .arrow-link svg:hover {
-  fill: #FB5353;
+  fill: #fb5353;
 }
 
 @media (max-width: 850px) {
@@ -1522,7 +1522,7 @@ span.colorized {
 }
 
 .form .form__form .form__privacy a:hover {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 @media (max-width: 830px) {
@@ -1597,7 +1597,7 @@ span.colorized {
 }
 
 .arrow-link svg:hover {
-  fill: #FB5353;
+  fill: #fb5353;
 }
 
 .students__item {
@@ -1752,7 +1752,7 @@ span.colorized {
 }
 
 .news .news__filters label input:checked + span {
-  color: #FB5353;
+  color: #fb5353;
 }
 
 .news .news__filters label input:checked + span::before {
