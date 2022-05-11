@@ -1533,7 +1533,7 @@ span.colorized {
 }
 
 .offer .pass .pass__wrapper .pass__login .pass-to-register-btn:hover {
-  color: #808080;
+  text-decoration: underline;
 }
 
 .offer .pass .pass__wrapper .pass__reset .pass-reset-btn {
