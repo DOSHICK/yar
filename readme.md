@@ -85,3 +85,6 @@
     + changeLinksToBtns() : убрать у ссылки href и перенести его значение в value, если экран > 1150
 * btns-nav.js :
   - ValidatePromo() : демонстрационный вариант поиска в массиве значения равного promoArrat.obj.name
+
+
+Для доп информации: telegram: @ivan_dosh
