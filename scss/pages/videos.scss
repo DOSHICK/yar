@@ -293,9 +293,11 @@
         }
       }
       .filter__nav {
+        flex-direction: column;
         .filter__nab-btn_submit {
         }
         .filter__nab-btn_reset {
+          padding: 20px 20px 20px 20px;
         }
       }
     }
