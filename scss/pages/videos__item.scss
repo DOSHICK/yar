@@ -52,7 +52,6 @@
         }
       }
     }
-    
   }
   .lesson__block_3 {
     grid-column: 3;
@@ -88,10 +87,23 @@
     .lesson__block_1 {
       grid-column: 1;
       grid-row: 2;
+      margin: 0px auto;
+      .ya-share2 {
+        margin: 0px auto;
+      }
     }
     .lesson__block_2 {
       grid-column: 1;
       grid-row: 1;
+      .videos__item-info {
+        margin: 20px auto 0px auto;
+        width: fit-content;
+        .videos-block {
+        }
+      }
+      .btns-nav {
+        margin: 30px auto;
+      }
     }
     .lesson__block_3 {
       margin: 50px 0px 0px 0px;
@@ -103,21 +115,26 @@
 @media (max-width: 500px) {
   .lesson {
     .lesson__block_1 {
+      width: unset;
       .lesson-img {
-        max-width: calc(100vw - 35px *2);
+        max-width: calc(100vw - 35px * 2);
         height: fit-content;
       }
     }
     .lesson__block_2 {
+      .videos__item-info {
+        width: 100%;
+        .videos-block {
+        }
+      }
     }
     .lesson__block_3 {
     }
   }
 }
 
-
-.similarly{
-  .similarly__title{
+.similarly {
+  .similarly__title {
     text-transform: uppercase;
   }
   .similarly__navigation {

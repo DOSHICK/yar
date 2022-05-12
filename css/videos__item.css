@@ -1639,12 +1639,25 @@ span.colorized {
     grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
+    margin: 0px auto;
+  }
+  .lesson .lesson__block_1 .ya-share2 {
+    margin: 0px auto;
   }
   .lesson .lesson__block_2 {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .lesson .lesson__block_2 .videos__item-info {
+    margin: 20px auto 0px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .lesson .lesson__block_2 .btns-nav {
+    margin: 30px auto;
   }
   .lesson .lesson__block_3 {
     margin: 50px 0px 0px 0px;
@@ -1656,11 +1669,17 @@ span.colorized {
 }
 
 @media (max-width: 500px) {
+  .lesson .lesson__block_1 {
+    width: unset;
+  }
   .lesson .lesson__block_1 .lesson-img {
-    max-width: calc(100vw - 35px *2);
+    max-width: calc(100vw - 35px * 2);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .lesson .lesson__block_2 .videos__item-info {
+    width: 100%;
   }
 }
 

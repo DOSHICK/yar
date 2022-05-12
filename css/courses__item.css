@@ -1860,6 +1860,9 @@ span.colorized {
 
 @media (max-width: 950px) {
   .offer .offer__block_2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     padding: 16px 0px 0px 0px;
   }
 }
@@ -1879,8 +1882,9 @@ span.colorized {
 @media (max-width: 950px) {
   .offer .offer__block_2 .ya-share2 {
     margin: 70px 0px 0px 0px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 

@@ -1653,6 +1653,11 @@ span.colorized {
     font-size: 32px;
     line-height: 120%;
   }
+  .offer .offer__wrapper .offer__img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media (max-width: 500px) {
