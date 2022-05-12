@@ -44,14 +44,11 @@ const swiperEventBlock2 = new Swiper('.swiper.event_2', {
   noSwiping: true
 });
 
+function oneControllForSwipers(){
+  swiperEventBlock2.controller.control = swiperEventBlock1
+  swiperEventBlock1.controller.control = swiperEventBlock2
+}
 
+oneControllForSwipers()
 
-swiperEventBlock2.controller.control = swiperEventBlock1
-swiperEventBlock1.controller.control = swiperEventBlock2
-
-// let SwiperWrapper = document.querySelector(".swiper-wrapper.event__wrapper");
-
-// function walkThrough() {
-
-// }
 

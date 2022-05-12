@@ -1,7 +1,5 @@
 let filterItem = document.querySelectorAll(".filter__item");
 
-
-
 for (let index = 0; index < filterItem.length; index++ ){
   let currentItem = filterItem[index];
   let filterItemHeader = currentItem.querySelector(".filter__header");

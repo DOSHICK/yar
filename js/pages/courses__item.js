@@ -1,14 +1,16 @@
 //  course-faq работа аккордеона
 let conditionBtn = document.querySelectorAll(".course-faq__condition");
 
-for(let index = 0; index < conditionBtn.length; index++){
-  let currentBtn = conditionBtn[index];
-  let currentBlock = currentBtn.parentNode.parentNode;
-  currentBtn.onclick = function(){
-    currentBlock.classList.toggle("body-visible");
+function addOnclicktoConditionBtn(){
+  for(let index = 0; index < conditionBtn.length; index++){
+    let currentBtn = conditionBtn[index];
+    let currentBlock = currentBtn.parentNode.parentNode;
+    currentBtn.onclick = function(){
+      currentBlock.classList.toggle("body-visible");
+    }
   }
 }
-
+addOnclicktoConditionBtn()
 
 function offerShuffle(){
   let offer = document.querySelector(".offer")
@@ -25,7 +27,6 @@ function offerShuffle(){
   block2.appendChild(socials);
 
 }
-
 
 
 function checkResolution(){

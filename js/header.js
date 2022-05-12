@@ -12,6 +12,7 @@ for (let index = 0; index < changers.length; index++) {
 }
 
 
+// работа с burger
 let burgerBtn = document.getElementById("burger-btn");
 burgerBtn.onclick = function () {
   changeBurgerImg();
@@ -38,6 +39,8 @@ function changeBodyScrolling() {
 }
 
 
+
+// работа с кнопками, имеющими выпадающий список в header
 let listedBlocks = document.querySelectorAll("li.nav__item.listed");
 function changeLinksToBtns() {
   if (window.innerWidth > 1150) {
