@@ -143,9 +143,8 @@
           color: #ffffff;
           opacity: 0.5;
         }
-        
       }
-      
+
       .test__text {
         font-weight: 400;
         font-size: 14px;
@@ -208,35 +207,33 @@
         .test__moves-item {
           display: block;
           &.current {
-            .test__moves-block {
+            .test__moves-block{
               display: block;
-              padding: 18px 18px 19px 17px;
-              background: #22211e;
-              &.correct {
-                background: #22211e;
-                .test__moves-condition {
-                  color: #629924;
-                }
-                &.current {
-                  .test__moves-condition {
-                    color: #ffffff;
-                  }
-                  background: #629924;
-                }
-              }
-              &.incorrect {
-                background: #22211e;
-                .test__moves-condition {
-                  color: #fb5353;
-                }
-                &.current {
-                  .test__moves-condition {
-                    color: #ffffff;
-                  }
-                  background: #fb5353;
-                }
-              }
             }
+            &.correct {
+            background: #22211e;
+            .test__moves-condition {
+              color: #629924;
+            }
+            &.current {
+              .test__moves-condition {
+                color: #ffffff;
+              }
+              background: #629924;
+            }
+          }
+          &.incorrect {
+            background: #22211e;
+            .test__moves-condition {
+              color: #fb5353;
+            }
+            &.current {
+              .test__moves-condition {
+                color: #ffffff;
+              }
+              background: #fb5353;
+            }
+          }
           }
           .test__moves-block {
             padding: 18px 18px 19px 17px;
@@ -409,6 +406,7 @@
 
     .tests__wrapper {
       .tests__moves {
+        width: 100%;
         .test__moves-item {
           &.correct {
           }

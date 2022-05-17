@@ -1474,31 +1474,29 @@ span.colorized {
   }
   .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block {
     display: block;
-    padding: 18px 18px 19px 17px;
+  }
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.correct {
-    background: #22211e;
-  }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.correct .test__moves-condition {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct .test__moves-condition {
     color: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.correct.current {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct.current {
     background: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.correct.current .test__moves-condition {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.incorrect {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.incorrect .test__moves-condition {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect .test__moves-condition {
     color: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.incorrect.current {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current {
     background: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block.incorrect.current .test__moves-condition {
+  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current .test__moves-condition {
     color: #ffffff;
   }
   .tests .tests__wrapper .tests__moves .test__moves-item .test__moves-block {
@@ -1618,6 +1616,9 @@ span.colorized {
 }
 
 @media (max-width: 600px) {
+  .tests .tests__wrapper .tests__moves {
+    width: 100%;
+  }
   .tests .tests__wrapper .test__board img {
     width: 100%;
   }
