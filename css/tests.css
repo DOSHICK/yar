@@ -1409,6 +1409,20 @@ span.colorized {
   opacity: 0.5;
 }
 
+.tests .tests__wrapper .test__info .test__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 0px 0px 80px 0px;
+}
+
+.tests .tests__wrapper .test__info .test__text .test__text-title {
+  margin: 0px 0px 10px 0px;
+}
+
 .tests .tests__wrapper .test__info .test__btn-block {
   margin: 30px 0px 0px 0px;
 }
@@ -1597,18 +1611,6 @@ span.colorized {
   }
   .tests .tests__wrapper .test__info .test__status .test__message {
     margin: 20px 0px 0px 0px;
-  }
-  .tests .tests__wrapper .test__info .test__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    text-align: center;
-    color: #ffffff;
-    opacity: 0.5;
-    margin: 0px 0px 80px 0px;
-  }
-  .tests .tests__wrapper .test__info .test__text .test__text-title {
-    margin: 0px 0px 10px 0px;
   }
   .tests .tests__wrapper .test__info .test__btn-block .test__btn {
     margin: 10px 0px 0px 0px;

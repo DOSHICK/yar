@@ -143,6 +143,22 @@
           color: #ffffff;
           opacity: 0.5;
         }
+        
+      }
+      
+      .test__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.5;
+        margin: 0px 0px 80px 0px;
+        .test__text-title {
+          margin: 0px 0px 10px 0px;
+        }
+        .test__text-level {
+        }
       }
 
       .test__btn-block {
@@ -366,18 +382,6 @@
         }
 
         .test__text {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 130%;
-          text-align: center;
-          color: #ffffff;
-          opacity: 0.5;
-          margin: 0px 0px 80px 0px;
-          .test__text-title {
-            margin: 0px 0px 10px 0px;
-          }
-          .test__text-level {
-          }
         }
 
         .test__btn-block {
