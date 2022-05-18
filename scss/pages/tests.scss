@@ -446,3 +446,54 @@
     }
   }
 }
+
+@media (max-width: 340px) {
+  .tests {
+    .test__btn {
+      &:hover {
+      }
+      &.choosen {
+      }
+    }
+
+    .tests__wrapper {
+      .tests__moves {
+        .test__moves-item {
+          &.correct {
+          }
+          &.incorrect {
+          }
+        }
+      }
+
+      .test__board {
+        img {
+        }
+      }
+
+      .test__info {
+        .test__duration {
+          .test__duration-btn {
+            &.choosen {
+            }
+          }
+        }
+
+        .test__status{
+          .test__status-block{
+            grid-template-columns: auto;
+          }
+        }
+
+        .test__btn-block {
+          .test__btn {
+            &.active {
+              &:hover {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

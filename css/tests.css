@@ -1634,4 +1634,11 @@ span.colorized {
     width: 100%;
   }
 }
+
+@media (max-width: 340px) {
+  .tests .tests__wrapper .test__info .test__status .test__status-block {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
 /*# sourceMappingURL=tests.css.map */
