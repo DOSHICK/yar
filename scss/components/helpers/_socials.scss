@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   .ya-share2__item {
-    margin: 0px 40px 0px 0px !important; 
-    &:last-child{
+    margin: 0px 40px 0px 0px !important;
+    &:last-child {
       margin: unset !important;
     }
     .ya-share2__link {
@@ -17,6 +17,46 @@
         span.ya-share2__badge {
           background: $colorRed;
         }
+      }
+    }
+  }
+}
+
+.socials {
+  margin: 52px 0px 60px 0px;
+  display: flex;
+  flex-direction: row;
+  .socials__item {
+    margin: 0px 40px 0px 0px !important;
+    &:last-child {
+      margin: unset !important;
+    }
+    svg {
+      fill: #000;
+      transition: all 0.3s ease 0s;
+    }
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      svg {
+        fill: $colorRed;
+      }
+    }
+    &.socials__item_png {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #000;
+      border-radius: 50%;
+      img{
+        height: 15px;
+      }
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover{
+        background: $colorRed;
       }
     }
   }
