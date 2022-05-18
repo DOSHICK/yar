@@ -2,6 +2,8 @@
 @import "../components/layout/layout-all";
 
 .tests {
+  background: #161512;
+
   .test__btn {
     font-weight: 700;
     font-size: 13px;
@@ -30,7 +32,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #161512;
     padding: 50px 50px 100px 40px;
     .tests__moves {
       min-width: 150px;
@@ -59,8 +60,8 @@
     }
 
     .test__info {
-      max-width: 400px;
-      min-width: 300px;
+      max-width: 350px;
+      min-width: 350px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -161,7 +162,7 @@
       }
 
       .test__btn-block {
-        margin: 30px 0px 0px 0px;
+        margin: 30px 0px 25px 0px;
         .test__btn {
           &.active {
             background: #629924;

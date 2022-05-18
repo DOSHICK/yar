@@ -1237,6 +1237,10 @@ span.colorized {
   background: #fb5353;
 }
 
+.tests {
+  background: #161512;
+}
+
 .tests .test__btn {
   font-weight: 700;
   font-size: 13px;
@@ -1275,7 +1279,6 @@ span.colorized {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #161512;
   padding: 50px 50px 100px 40px;
 }
 
@@ -1309,8 +1312,8 @@ span.colorized {
 }
 
 .tests .tests__wrapper .test__info {
-  max-width: 400px;
-  min-width: 300px;
+  max-width: 350px;
+  min-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1424,7 +1427,7 @@ span.colorized {
 }
 
 .tests .tests__wrapper .test__info .test__btn-block {
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 25px 0px;
 }
 
 .tests .tests__wrapper .test__info .test__btn-block .test__btn.active {
