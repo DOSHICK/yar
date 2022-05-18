@@ -1459,6 +1459,7 @@ span.colorized {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    max-width: 508px;
   }
   .tests .tests__wrapper .tests__moves {
     width: 100%;
