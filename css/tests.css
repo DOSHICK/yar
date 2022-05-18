@@ -1456,9 +1456,12 @@ span.colorized {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .tests .tests__wrapper .tests__moves {
-    width: 339px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

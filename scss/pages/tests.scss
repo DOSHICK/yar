@@ -194,8 +194,9 @@
       padding: 28px 18px 100px 18px;
       flex-direction: column;
       align-items: center;
+      width: fit-content;
       .tests__moves {
-        width: 339px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         grid-gap: unset;
