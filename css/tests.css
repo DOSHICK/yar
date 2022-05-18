@@ -1237,10 +1237,6 @@ span.colorized {
   background: #fb5353;
 }
 
-.tests {
-  background: #161512;
-}
-
 .tests .test__btn {
   font-weight: 700;
   font-size: 13px;
@@ -1268,7 +1264,12 @@ span.colorized {
   border: 3px solid #629924;
 }
 
-.tests .tests__wrapper {
+.tests .tests__alpha-wrapper {
+  background: #161512;
+  width: 100%;
+}
+
+.tests .tests__alpha-wrapper .tests__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1279,10 +1280,10 @@ span.colorized {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 50px 100px 40px;
+  padding: 50px 0px 100px 0px;
 }
 
-.tests .tests__wrapper .tests__moves {
+.tests .tests__alpha-wrapper .tests__wrapper .tests__moves {
   min-width: 150px;
   display: -ms-grid;
   display: grid;
@@ -1294,24 +1295,24 @@ span.colorized {
   grid-column-gap: 13px;
 }
 
-.tests .tests__wrapper .tests__moves .test__moves-item {
+.tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item {
   width: 100%;
   height: 100%;
 }
 
-.tests .tests__wrapper .tests__moves .test__moves-item .test__moves-block {
+.tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item .test__moves-block {
   display: none;
 }
 
-.tests .tests__wrapper .tests__moves .test__moves-item.correct {
+.tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.correct {
   background: #629924;
 }
 
-.tests .tests__wrapper .tests__moves .test__moves-item.incorrect {
+.tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.incorrect {
   background: #fb5353;
 }
 
-.tests .tests__wrapper .test__info {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info {
   max-width: 350px;
   min-width: 350px;
   display: -webkit-box;
@@ -1326,21 +1327,21 @@ span.colorized {
           justify-content: space-between;
 }
 
-.tests .tests__wrapper .test__info .test__duration {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__duration {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
 }
 
-.tests .tests__wrapper .test__info .test__status {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status {
   margin: 80px 0px 30px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__status.test-3 {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status.test-3 {
   margin: 0px 0px 30px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__status-block {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -1348,7 +1349,7 @@ span.colorized {
       grid-template-columns: auto auto;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__status-block .test__status-item {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block .test__status-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,7 +1365,7 @@ span.colorized {
   margin: 0px 0px 20px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-value {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-value {
   font-weight: 600;
   font-size: 28px;
   line-height: 120%;
@@ -1372,7 +1373,7 @@ span.colorized {
   position: relative;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-value img {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-value img {
   position: absolute;
   top: 0px;
   right: 0;
@@ -1380,7 +1381,7 @@ span.colorized {
           transform: translateX(100%);
 }
 
-.tests .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-description {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block .test__status-item .test__status-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
@@ -1388,7 +1389,7 @@ span.colorized {
   opacity: 0.5;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__time {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__time {
   display: block;
   width: 100%;
   font-weight: 600;
@@ -1400,7 +1401,7 @@ span.colorized {
   opacity: 0.3;
 }
 
-.tests .tests__wrapper .test__info .test__status .test__message {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__message {
   margin: 60px 0px 0px 0px;
   display: block;
   width: 100%;
@@ -1412,7 +1413,7 @@ span.colorized {
   opacity: 0.5;
 }
 
-.tests .tests__wrapper .test__info .test__text {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
@@ -1422,15 +1423,15 @@ span.colorized {
   margin: 0px 0px 80px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__text .test__text-title {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__text .test__text-title {
   margin: 0px 0px 10px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__btn-block {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__btn-block {
   margin: 30px 0px 25px 0px;
 }
 
-.tests .tests__wrapper .test__info .test__btn-block .test__btn.active {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__btn-block .test__btn.active {
   background: #629924;
   border: 3px solid #629924;
   color: #fff;
@@ -1439,7 +1440,7 @@ span.colorized {
   transition: all 0.3s ease 0s;
 }
 
-.tests .tests__wrapper .test__info .test__btn-block .test__btn.active:hover {
+.tests .tests__alpha-wrapper .tests__wrapper .test__info .test__btn-block .test__btn.active:hover {
   background: #55861f;
 }
 
@@ -1447,7 +1448,20 @@ span.colorized {
   .tests {
     padding: 0px 0px 0px 0px;
   }
-  .tests .tests__wrapper {
+  .tests .tests__alpha-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 0px 0px 0px;
+  }
+  .tests .tests__alpha-wrapper .tests__wrapper {
     padding: 28px 18px 100px 18px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1461,7 +1475,7 @@ span.colorized {
     width: fit-content;
     max-width: 508px;
   }
-  .tests .tests__wrapper .tests__moves {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1476,40 +1490,40 @@ span.colorized {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item {
     display: block;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current .test__moves-block {
     display: block;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.correct {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.correct .test__moves-condition {
     color: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.correct.current {
     background: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.correct.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.correct.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.incorrect {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.incorrect .test__moves-condition {
     color: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current {
     background: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.current.incorrect.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item .test__moves-block {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item .test__moves-block {
     padding: 18px 18px 19px 17px;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item .test__moves-block .test__moves-number {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item .test__moves-block .test__moves-number {
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
@@ -1517,50 +1531,50 @@ span.colorized {
     opacity: 0.5;
     margin: 0px 20px 0px 0px;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item .test__moves-block .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item .test__moves-block .test__moves-condition {
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.correct {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.correct {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.correct .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.correct .test__moves-condition {
     color: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.correct.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.correct.current {
     background: #629924;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.correct.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.correct.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.incorrect {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.incorrect {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.incorrect .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.incorrect .test__moves-condition {
     color: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.incorrect.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.incorrect.current {
     background: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves .test__moves-item.incorrect.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves .test__moves-item.incorrect.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves.opened {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened {
     max-height: 315px;
     overflow-y: scroll;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item {
     display: block;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.current.correct .test__moves-block {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.current.correct .test__moves-block {
     background: #629924;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block {
     display: block;
     padding: 18px 18px 19px 17px;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block .test__moves-number {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block .test__moves-number {
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
@@ -1568,68 +1582,68 @@ span.colorized {
     opacity: 0.5;
     margin: 0px 20px 0px 0px;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item .test__moves-block .test__moves-condition {
     font-weight: 700;
     font-size: 14px;
     line-height: 140%;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.correct {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.correct {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.correct .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.correct .test__moves-condition {
     color: #629924;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.correct.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.correct.current {
     background: #629924;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.correct.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.correct.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.incorrect {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.incorrect {
     background: #22211e;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.incorrect .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.incorrect .test__moves-condition {
     color: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.incorrect.current {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.incorrect.current {
     background: #fb5353;
   }
-  .tests .tests__wrapper .tests__moves.opened .test__moves-item.incorrect.current .test__moves-condition {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves.opened .test__moves-item.incorrect.current .test__moves-condition {
     color: #ffffff;
   }
-  .tests .tests__wrapper .test__board {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__board {
     margin: 13px 0px 30px 0px;
   }
-  .tests .tests__wrapper .test__info {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info {
     max-width: none;
     width: 100%;
   }
-  .tests .tests__wrapper .test__info .test__status {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     max-width: 400px;
     margin: 0px 0px 20px 0px;
   }
-  .tests .tests__wrapper .test__info .test__status .test__status-block .test__status-item {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block .test__status-item {
     min-width: 150px;
   }
-  .tests .tests__wrapper .test__info .test__status .test__message {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__message {
     margin: 20px 0px 0px 0px;
   }
-  .tests .tests__wrapper .test__info .test__btn-block .test__btn {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info .test__btn-block .test__btn {
     margin: 10px 0px 0px 0px;
   }
 }
 
 @media (max-width: 600px) {
-  .tests .tests__wrapper .tests__moves {
+  .tests .tests__alpha-wrapper .tests__wrapper .tests__moves {
     width: 100%;
   }
-  .tests .tests__wrapper .test__board img {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__board img {
     width: 100%;
   }
-  .tests .tests__wrapper .test__info {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info {
     max-width: none;
     min-width: unset;
     width: 100%;
@@ -1637,7 +1651,7 @@ span.colorized {
 }
 
 @media (max-width: 340px) {
-  .tests .tests__wrapper .test__info .test__status .test__status-block {
+  .tests .tests__alpha-wrapper .tests__wrapper .test__info .test__status .test__status-block {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
