@@ -424,7 +424,7 @@
 
       .test__info {
         max-width: none;
-        min-width: none;
+        min-width: unset;
         width: 100%;
         .test__duration {
           .test__duration-btn {

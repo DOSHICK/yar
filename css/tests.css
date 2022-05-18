@@ -1627,7 +1627,7 @@ span.colorized {
   }
   .tests .tests__wrapper .test__info {
     max-width: none;
-    min-width: none;
+    min-width: unset;
     width: 100%;
   }
 }
