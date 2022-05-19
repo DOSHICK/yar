@@ -1907,8 +1907,22 @@ span.colorized {
   text-transform: uppercase;
 }
 
+@media (max-width: 450px) {
+  .offer .offer__block_1 .offer__text .offer__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .offer .offer__block_1 .offer__text .offer__info .offer__level {
   margin: 0px 55px 0px 0px;
+}
+
+@media (max-width: 450px) {
+  .offer .offer__block_1 .offer__text .offer__info .offer__level {
+    margin: 0px 20px 0px 0px;
+  }
 }
 
 .offer .offer__block_2 {
