@@ -79,8 +79,14 @@
         line-height: 120%;
         color: #a5a5a5;
         text-transform: uppercase;
+        @media (max-width: 450px) {
+          justify-content: space-between;
+        }
         .offer__level {
           margin: 0px 55px 0px 0px;
+          @media (max-width: 450px) {
+            margin: 0px 20px 0px 0px;
+          }
         }
         .offer__time {
         }
@@ -94,7 +100,7 @@
       grid-row: 3;
       grid-column: 1;
       padding: 16px 0px 0px 0px;
-      .btns-nav{
+      .btns-nav {
         align-self: center;
         width: 100%;
       }
